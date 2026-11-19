@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Enrollment Form | JsonPowerDB</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>Student Enrollment Form</h1>
+            <p>Student Record Management using JsonPowerDB</p>
+        </header>
+
+        <!-- Main Form -->
+        <main class="form-container">
+
+            <div class="form-heading">
+                <h2>Student Details</h2>
+                <p>Enter Roll Number to check student records.</p>
+            </div>
+
+            <form id="studentForm" autocomplete="off">
+
+                <!-- Roll Number -->
+                <div class="form-group">
+                    <label for="rollNo">
+                        Roll Number <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="rollNo"
+                        name="Roll-No"
+                        placeholder="Enter Roll Number"
+                        required
+                        autofocus
+                    >
+                </div>
+
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="fullName">
+                        Full Name <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="Full-Name"
+                        placeholder="Enter Full Name"
+                        required
+                        disabled
+                    >
+                </div>
+
+                <!-- Class -->
+                <div class="form-group">
+                    <label for="studentClass">
+                        Class <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="studentClass"
+                        name="Class"
+                        placeholder="Enter Class"
+                        required
+                        disabled
+                    >
+                </div>
+
+                <!-- Birth Date -->
+                <div class="form-group">
+                    <label for="birthDate">
+                        Birth Date <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="date"
+                        id="birthDate"
+                        name="Birth-Date"
+                        required
+                        disabled
+                    >
+                </div>
+
+                <!-- Address -->
+                <div class="form-group">
+                    <label for="address">
+                        Address <span class="required">*</span>
+                    </label>
+
+                    <textarea
+                        id="address"
+                        name="Address"
+                        placeholder="Enter Complete Address"
+                        rows="3"
+                        required
+                        disabled
+                    ></textarea>
+                </div>
+
+                <!-- Enrollment Date -->
+                <div class="form-group">
+                    <label for="enrollmentDate">
+                        Enrollment Date <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="date"
+                        id="enrollmentDate"
+                        name="Enrollment-Date"
+                        required
+                        disabled
+                    >
+                </div>
+
+                <!-- Status Message -->
+                <div id="message" class="message" role="status"
+                     aria-live="polite">
+                    Enter a Roll Number to continue.
+                </div>
+
+                <!-- Control Buttons -->
+                <div class="button-group">
+
+                    <button
+                        type="button"
+                        id="saveBtn"
+                        disabled
+                    >
+                        Save
+                    </button>
+
+                    <button
+                        type="button"
+                        id="updateBtn"
+                        disabled
+                    >
+                        Update
+                    </button>
+
+                    <button
+                        type="button"
+                        id="resetBtn"
+                        disabled
+                    >
+                        Reset
+                    </button>
+
+                </div>
+
+            </form>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Developed using HTML, CSS, JavaScript and JsonPowerDB</p>
+            <p>Login2Xplore Micro Project</p>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+    <script src="config.js"></script>
+
+</body>
+</html>

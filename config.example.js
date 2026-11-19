@@ -1,0 +1,3 @@
+window.JPDB_CONFIG = {
+    token: "YOUR_CONNECTION_TOKEN_HERE"
+};
